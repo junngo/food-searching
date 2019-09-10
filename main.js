@@ -10,13 +10,13 @@ const API_URL = 'http://floating-harbor-78336.herokuapp.com/fastfood';
 function handleSubmit(event) {
     event.preventDefault();
     
-    const currentValue = searchInput.value;
+    const searchValue = searchInput.value;
     let templateNode;
     
-    console.log(currentValue);
+    console.log(searchValue);
     searchInput.value = ""
 
-    fetch(API_URL)
+    fetch(API_URL+`?searchKeyword=${searchValue}&page=${1}&prePage=${10}`)
       .then(response => response.json())
       .then(json => {
         var itemList = json.list;
