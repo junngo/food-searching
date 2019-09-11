@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
 <body>
+
+    <!-- HEADER -->
     <div class="header">
         <div class="title">Find Awesome Food in Korea</div>
         <div class="input-box">
@@ -18,20 +20,22 @@
         </div>
     </div>
 
-    <div class="food-list">
+    <!-- FOOD-LIST -->
+    <div class="food-info">
         <div class="total">Search Awesome Food.</div>
-        <div id="item-template" class="item">
-            <div class="item-no"></div>
-            <div class="item-detail">
-                <div class="item-name"></div>
-                <div class="item-addr"></div>
-            </div>
+        <div class="list"></div>
+        <div class="paging"></div>
+    </div>
+
+    <!-- FOOD-LIST-TEMPLATE -->
+    <div id="item-template" class="item">
+        <div class="item-no"></div>
+        <div class="item-detail">
+            <div class="item-name"></div>
+            <div class="item-addr"></div>
         </div>
     </div>
 
-    <div class="paging">
-        Prev 1 2 3 4 5 Next
-    </div>
 
     <script src="main.js"></script>
 

@@ -78,5 +78,25 @@ body {
 }
 
 .paging {
-    border: 2px solid red;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.paging a {
+    text-decoration: none;
+    margin-right: 8px;
+    color: #bd5a00;
+}
+
+.paging a.current {
+    font-weight: bold;
+    color: #ffb500;
+}
+
+.paging a.prev {
+    margin-right: 15px;
+}
+
+.paging a.next {
+    margin-left: 7px;
 }
